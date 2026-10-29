@@ -1,0 +1,19 @@
+{
+ "country": "AF",
+ "acts": [
+  {
+   "slug": "constitution",
+   "short": "Constitution",
+   "title": "Constitution of Afghanistan (2004)",
+   "url": "https://moj.gov.af/en/enforced-constitution-afghanistan",
+   "versions": [
+    {
+     "from": "2004-01-03",
+     "units": 175,
+     "source_url": "https://moj.gov.af/en/enforced-constitution-afghanistan",
+     "sha256": "9e6acec45645adc593baf2e6dddfdd1325abbb2be35d1171b30428bc3aef8dde"
+    }
+   ]
+  }
+ ]
+}
