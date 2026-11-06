@@ -1,5 +1,7 @@
 # Afghanistan: law history in git
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Afghanistan's national law, which global-law reads at `afghanistan/national/acts/`.
+
 The law of Afghanistan as a git history: one file per provision, one commit per law on the day its change took effect, and the law that made each change as the commit's author. `git blame` names the law behind every line; picking a date gives the text in force that day.
 
 It follows the shared design of [lexifina/global-law](https://github.com/lexifina/global-law), which places it at `af/`.
