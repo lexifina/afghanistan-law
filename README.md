@@ -24,7 +24,8 @@ The text is in English, as the Ministry of Justice publishes it. Its Dari and Pa
 
 - **[Ask Claude about Afghan law](https://global-law.lexifina.com/v1/try_claude?country=afghanistan)**: opens Claude with a first question ready.
 - **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=afghanistan)**: the same question in ChatGPT.
-- **[Call the API in your browser](https://global-law.lexifina.com/v1/search_law?query=freedom+of+expression&jurisdictions=afghanistan)**: a search of Afghan law for "freedom of expression", returned as JSON. See the [documentation here](https://lexifina.com/api/global-law).
+- **[Search Afghan law on our site](https://lexifina.com/law?country=afghanistan&q=freedom+of+expression)**: a search for "freedom of expression", with each provision's text and its versions, no account needed.
+- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=freedom+of+expression&jurisdiction=afghanistan)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
 
 Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in English.
 
