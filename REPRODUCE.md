@@ -67,3 +67,22 @@ The commit messages are written by `build.py` from the source data.
 
 Model use at data-build time:
 - Claude Code wrote the deterministic parser; no model wrote or altered any legal text.
+
+## Gazette instruments (runner, from 2026-11-27)
+
+The Dari instruments are added by a runner that appends commits to this history (it does not rebuild it):
+
+1. `af_fetch.py` walks the ministry's law database list (http://laws.moj.gov.af/ShowLawPersian.aspx, an ASP.NET
+   list that pages only forward), records every row (title, gazette number, publication date, status), and
+   downloads each gazette PDF from No. 780 on once, one request at a time, at least a second apart.
+2. `af_parse.py` reads each PDF's own text layer with PyMuPDF; nothing is OCRed. Columns are told apart as Dari
+   or Pashto by their function words; columns set in legacy fonts, whose text layer is not real text, are
+   dropped and the gazette held. The layer is normalised mechanically (NFKC, tatweel removed, Arabic-Indic digit
+   runs and mirrored brackets stored in visual order put back in reading order, a line's leading punctuation
+   moved to its end). Article headings (`مادۀ <ordinal>:`) are read, ordinals in words turned into numbers.
+3. `af_build.py` matches each listed instrument to the run of articles under its title in the gazette, takes
+   it only when the run is numbered 1..N without a gap, reads its commencement article for the in-force day,
+   and writes one commit per instrument. Held items and their reasons are kept in the runner's `state.json`.
+
+So far: 1 instruments (382 articles) from 1 gazettes read; 1 items held.
+The scripts were written by Claude Code (Claude Opus 5.5); no model wrote, translated or corrected legal text.

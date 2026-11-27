@@ -1,0 +1,32 @@
+{
+  "corpus": "af/national/acts",
+  "name": "Afghanistan law: the Constitution, laws, decrees, regulations and other instruments as the Official Gazette (Jarida-ye Rasmi) prints them in Dari, from the Ministry of Justice's law database",
+  "label": "Afghanistan",
+  "language": "fa-AF",
+  "dates": {
+    "commit": "in-force",
+    "other_trailers": [
+      "In-force-basis",
+      "Published",
+      "Gazette",
+      "Authority",
+      "Source",
+      "Kind",
+      "Text-source"
+    ],
+    "time": "12:00 Asia/Kabul (UTC+4:30)"
+  },
+  "in_force_trailer": "In-force",
+  "has_future_branch": false,
+  "author": "the instrument, as the ministry database titles it",
+  "citation": {
+    "file": "([^/]+/[0-9]{4}/[0-9]{4}-[^/]+|قانون-اساسی/[^/]+)/ماده-0*([0-9]+)\\.md",
+    "cites": "(مادۀ|ماده) ?{n}\\b"
+  },
+  "translations": {
+    "en": "translations/en/"
+  },
+  "sources": [
+    "http://laws.moj.gov.af/ShowLawPersian.aspx"
+  ]
+}
