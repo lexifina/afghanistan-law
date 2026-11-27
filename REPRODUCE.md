@@ -94,5 +94,5 @@ with a correct table, at 99.4% of characters (gazette 1498, 26 titles) and 99.6%
 remaining differences being wording differences between contents page and body. No Unicode copy of the Penal Code
 from another publisher was found to compare with; it converts to 916 articles numbered without a gap.
 
-So far: 5 instruments (1,444 articles) from 101 gazettes read; 119 items held.
+So far: 11 instruments (1,587 articles) from 208 gazettes read; 228 items held.
 The scripts were written by Claude Code (Claude Opus 5.5); no model wrote, translated or corrected legal text.
