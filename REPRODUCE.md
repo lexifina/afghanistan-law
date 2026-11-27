@@ -84,5 +84,15 @@ The Dari instruments are added by a runner that appends commits to this history 
    it only when the run is numbered 1..N without a gap, reads its commencement article for the in-force day,
    and writes one commit per instrument. Held items and their reasons are kept in the runner's `state.json`.
 
-So far: 1 instruments (382 articles) from 9 gazettes read; 9 items held.
+Legacy-font conversion (`af_legacy.py`): gazettes set in Pashto Aryob whose embedded ToUnicode table is shifted get
+each glyph's character from the code the embedded font gives it (presentation forms by their Unicode decomposition;
+private-use Pashto codes by majority of correct subsets), and lines are rebuilt from glyph positions
+(`af_parse.rtl_lines`). Validation on 27 November 2026 (`af_validate.py`): on font subsets whose own table is
+correct, the conversion gives the same character for every glyph (99/99 in gazette 1498, 96/96 and 105/105 in
+gazette 1314); the article titles of the converted body text match the gazette's own table of contents, printed
+with a correct table, at 99.4% of characters (gazette 1498, 26 titles) and 99.6% (gazette 1314, 32 titles), the
+remaining differences being wording differences between contents page and body. No Unicode copy of the Penal Code
+from another publisher was found to compare with; it converts to 916 articles numbered without a gap.
+
+So far: 2 instruments (1,298 articles) from 41 gazettes read; 40 items held.
 The scripts were written by Claude Code (Claude Opus 5.5); no model wrote, translated or corrected legal text.

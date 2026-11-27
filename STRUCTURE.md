@@ -47,7 +47,14 @@ Afghanistan (2004 to 15 August 2021), and from 15 August 2021 the de facto autho
 
 ## Text
 
-The Dari text is the gazette PDF's own text layer, as the ministry publishes it; nothing is OCRed. Gazettes set
-in legacy fonts whose text layer is not real text (it decodes to other letters) are held. The layer is
+The Dari text is the gazette PDF's own text layer, as the ministry publishes it; nothing is OCRed. The layer is
 normalised mechanically (Unicode presentation forms, justification stretch, digit runs and brackets stored in
 visual order); no word is corrected, so the layer's own errors, such as spaces inside words, remain.
+
+Many gazettes are set in the legacy font Pashto Aryob, embedded with a shifted ToUnicode table, so their text
+layer reads as other letters although the page prints correctly. For these (`Text-source: legacy-font
+conversion`) each glyph's character is taken from the code the embedded font itself assigns that glyph (Unicode
+Arabic presentation forms, by their standard decomposition; the font's private-use codes for Pashto letters by
+the value the font's correct subsets give them), and lines are rebuilt from glyph positions. No image is read.
+The conversion agrees glyph for glyph with the publisher's own table wherever that table is correct, and it was
+checked against text the same gazettes print with a correct table (REPRODUCE.md).

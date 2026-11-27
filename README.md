@@ -9,7 +9,7 @@ The law of Afghanistan as a git history: one file per provision, one commit per 
 
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Afghanistan's national law, which global-law reads at `afghanistan/national/acts/`.
 
-**What is in it now:** 1 instruments from the Official Gazette in Dari, one file per article (382 articles), in force from 2014-06-05 to 2014-06-05: laws and codes (1). The Ministry of Justice's English text of the 2004 Constitution is under [`translations/en/`](translations/en/). [`STRUCTURE.md`](STRUCTURE.md) gives the layout and the dating rules; [`REPRODUCE.md`](REPRODUCE.md) says how the files were made.
+**What is in it now:** 2 instruments from the Official Gazette in Dari, one file per article (1,298 articles), in force from 2014-06-05 to 2018-02-14: laws and codes (2). The Ministry of Justice's English text of the 2004 Constitution is under [`translations/en/`](translations/en/). [`STRUCTURE.md`](STRUCTURE.md) gives the layout and the dating rules; [`REPRODUCE.md`](REPRODUCE.md) says how the files were made.
 
 Each act is a folder with one file per article: `قوانین/1393/1132-قانون-اجراآت-جزائی/ماده-001.md` is Article 1 of the Criminal Procedure Code, published in Official Gazette No. 1132 of 1393 (2014). Folders are named in Dari, by type (`قوانین/` laws, `مقررات/` regulations, `فرامین/` decrees, ...), solar-hijri year and gazette number.
 
@@ -62,7 +62,7 @@ Each gazette commit is credited to the instrument it publishes, as the ministry'
 ## What it does not show
 
 - **Amendments.** Each instrument is recorded as the gazette published it; an amending instrument is its own folder, and the amended text is not consolidated.
-- **Gazettes without a usable text layer.** Gazettes before 2002 are image scans, and some later ones, among them the Penal Code of 2017 (gazette 1260), are set in legacy fonts whose text layer is not real text; nothing is OCRed, so these are held (9 items so far).
+- **Gazettes without a usable text layer.** Gazettes before 2002 are image scans; nothing is OCRed, so these are held, as are instruments whose articles or commencement the builder cannot read (40 items so far). Gazettes set in the legacy font Pashto Aryob, among them the Penal Code of 2017, are converted from the embedded font's own codes (Text-source: legacy-font conversion; STRUCTURE.md).
 - **Earlier constitutions**, which are not versions of the 2004 text.
 - **How the text is applied.** The record holds what the ministry publishes as the enforced text, not whether or how it is applied in practice.
 
