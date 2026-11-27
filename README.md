@@ -62,7 +62,7 @@ Each gazette commit is credited to the instrument it publishes, as the ministry'
 ## What it does not show
 
 - **Amendments.** Each instrument is recorded as the gazette published it; an amending instrument is its own folder, and the amended text is not consolidated.
-- **Gazettes without a usable text layer.** Gazettes before 2002 are image scans, and some later ones, among them the Penal Code of 2017 (gazette 1260), are set in legacy fonts whose text layer is not real text; nothing is OCRed, so these are held (1 items so far).
+- **Gazettes without a usable text layer.** Gazettes before 2002 are image scans, and some later ones, among them the Penal Code of 2017 (gazette 1260), are set in legacy fonts whose text layer is not real text; nothing is OCRed, so these are held (9 items so far).
 - **Earlier constitutions**, which are not versions of the 2004 text.
 - **How the text is applied.** The record holds what the ministry publishes as the enforced text, not whether or how it is applied in practice.
 

@@ -84,5 +84,5 @@ The Dari instruments are added by a runner that appends commits to this history 
    it only when the run is numbered 1..N without a gap, reads its commencement article for the in-force day,
    and writes one commit per instrument. Held items and their reasons are kept in the runner's `state.json`.
 
-So far: 1 instruments (382 articles) from 1 gazettes read; 1 items held.
+So far: 1 instruments (382 articles) from 9 gazettes read; 9 items held.
 The scripts were written by Claude Code (Claude Opus 5.5); no model wrote, translated or corrected legal text.
